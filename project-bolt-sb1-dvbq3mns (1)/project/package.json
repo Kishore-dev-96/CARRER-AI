@@ -1,0 +1,52 @@
+{
+  "name": "ai-resume-voice-interview-platform",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "dev:fast": "vite --host 0.0.0.0 --port 5173 --force",
+    "dev:debug": "vite --host 0.0.0.0 --port 5173 --debug",
+    "clean": "rimraf dist node_modules/.vite .vite",
+    "dev:windows": "vite --host 0.0.0.0 --port 5173",
+    "build:windows": "vite build --mode production",
+    "memory-check": "node --max-old-space-size=4096 node_modules/vite/bin/vite.js"
+  },
+  "dependencies": {
+    "@clerk/clerk-react": "^4.30.0",
+    "@google/generative-ai": "^0.2.1",
+    "@monaco-editor/react": "^4.6.0",
+    "axios": "^1.6.0",
+    "drizzle-orm": "^0.29.0",
+    "lucide-react": "^0.344.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.20.1",
+    "recharts": "^2.8.0",
+    "sql.js": "^1.8.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "@types/node": "^24.0.8",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@types/sql.js": "^1.4.4",
+    "@types/uuid": "^9.0.7",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.18",
+    "eslint": "^9.9.1",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.11",
+    "globals": "^15.9.0",
+    "postcss": "^8.4.35",
+    "rimraf": "^6.0.1",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^8.3.0",
+    "vite": "^5.4.2"
+  }
+}
