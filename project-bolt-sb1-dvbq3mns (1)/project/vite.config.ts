@@ -9,15 +9,12 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 5173,
     strictPort: true,
-    open: false,
-    hmr: {
-      port: 5174,
-      overlay: true
-    }
+    open: false
+    // Removed HMR port override (not needed in production)
   },
   build: {
     target: 'es2015',
-    minify: 'terser',
+    // Removed minify: 'terser' → defaults to esbuild (faster & works on Vercel/Netlify)
     sourcemap: false,
     rollupOptions: {
       output: {
